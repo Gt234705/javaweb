@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outDiv{
+            width: 500px;
+            height:300px;
+            border: 1px solid green;
+            background-color: cadetblue;
+        }
+        .innerDiv{
+            width: 100px;
+            height: 100px;
+            border: 1px solid blue;
+              /*display: inline;  block 块元素  inlie 行元素 会使宽高效果失效*/
+
+        }
+        .d1{
+            background-color: brown;
+            position:absolute;
+            top: 100px;
+            right: 100px;
+
+          
+        }
+        .d2{
+            background-color: chartreuse;
+        
+        }
+        .d3{
+            background-color: darkorange;
+            
+        }
+
+
+        /*
+            position:
+                static      静态的（默认）
+                fixed       相对  相对浏览器窗口
+                relative    相对 相对元素原本的位置（原本位置不会呗其他元素所占用）
+                absolute    绝对定位
+            left        左
+            right       右
+            top         上
+            bottom      下
+        */
+    </style>
+</head>
+<body>
+    <div  class="innerDiv d1">div1</div>
+    <div  class="innerDiv d2">div2</div>
+    <div  class="innerDiv d3">div3</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outDiv{
+            width: 500px;
+            height:300px;
+            border: 1px solid green;
+            background-color: cadetblue;
+        }
+        .innerDiv{
+            width: 100px;
+            height: 100px;
+            border: 1px solid blue;
+              /*display: inline;  block 块元素  inlie 行元素 会使宽高效果失效*/
+
+        }
+        .d1{
+            background-color: brown;
+            float: right;
+        }
+        .d2{
+            background-color: chartreuse;
+            float: right;
+        }
+        .d3{
+            background-color: darkorange;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="outDiv">
+        <div  class="innerDiv d1">div1</div>
+        <div  class="innerDiv d2">div2</div>
+        <div  class="innerDiv d3">div3</div>
+    </div>
+    
+
+
+
+</body>
+</html>
