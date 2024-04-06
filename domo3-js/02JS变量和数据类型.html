@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            1、JS变量声明   var i=10;
+            JS是弱类型，不指定类型，赋值时才确定类型
+            引用类型  Object
+            function类型    function类型
+            命名未赋值
+            赋予null
+            判断数据类型的运算符    typeof
+        */
+
+        var i=10;   
+        console.log(i);
+        console.log(typeof i);
+
+        i="qweer";
+        console.log(i);
+        console.log(typeof i);
+
+        i=1>10;
+        console.log(i);
+        console.log(typeof i);
+
+        i=new Object();
+        console.log(i);
+        console.log(typeof i);
+
+        var fun1=function(){
+
+        }
+        console.log(fun1);
+        console.log(typeof fun1);
+
+       var b;
+        console.log(b);
+        console.log(typeof b);
+
+
+       // 判断一个字符串是否是回文串
+        var str="1231";
+        if(str==str.split("").reverse().join("")){
+            console.log("回文串");
+        }else{
+            console.log("不是回文串");
+        }
+       
+    </script>
+
+</head>
+<body>
+    
+    
+
+
+</body>
+</html>
