@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    /*
+    创建对象语法
+    方式1  new Object()
+    
+     方式2{属性名;属性值,.....,函数名:function(){}}
+    */ 
+    /*var person=new Object();
+    // 添加属性
+    person.name="张三";
+    person.age=10;
+    //添加方法
+    person.eat=function(food){
+            console.log(this.name+"正在吃"+food+this.age);
+    }
+
+    //访问属性
+    console.log(person.name);
+    console.log(person.age);
+    
+    //调用方法
+    person.eat("火锅");*/
+
+
+    var person={
+        "name":"张三",
+        "age":10,
+        "eat":function(food){
+            console.log(this.name+"正在吃"+food+this.age);
+    }
+}
+    //访问属性
+    console.log(person.name);
+    console.log(person.age);
+    
+    //调用方法
+    person.eat("火锅");
+
+
+</script>
+<body>
+    
+</body>
+</html>

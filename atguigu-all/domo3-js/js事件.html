@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+   
+function test(){
+    alert('按钮2被点击了')
+}
+function test3(){
+    alert('按钮3被点击了')
+}
+function test2(){
+    alert('按钮3被点击了')
+}
+
+     /*
+    1、事件的绑定方式
+        1、通过元素对象的属性绑定事件
+        2、通过DOM编程动态绑定事件
+        注意事项：
+            1、onclick事件绑定方式，只能绑定一个函数
+            2、通过DOM编程动态绑定事件，可以绑定多个函数
+            3一个事件可以绑定多个函数
+            4、一个元素可以同时绑定多个事件
+    2、常见事件：
+        1、鼠标事件
+            1、onclick
+            2、ondblclick
+            3、onmouseover  
+            4、onmouseout
+            5、onmousemove
+            6、onmousedown
+            7、onmouseup
+        2、键盘事件
+            1、onkeydown
+            2、onkeyup
+            3、onkeypress
+        3、表单事件
+    */
+
+    </script>
+    <style>
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="按钮1" onclick="alert('按钮1被点击了')">
+    <input type="button" value="按钮2" onclick="test(),test2()">
+    <input type="button" value="按钮4" ondblclick="test3()">
+    <br>
+    <img src="img/1.jpg" alt="" onmouseover="alert('鼠标移入')" onmouseout="alert('鼠标移出')">
+
+</body>
+</html>
