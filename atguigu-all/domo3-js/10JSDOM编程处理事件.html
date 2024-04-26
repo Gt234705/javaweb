@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload=function(){
+
+            var d1=document.getElementById('d1')
+        d1.onclick=function(){
+            d1.style.backgroundColor='blue'
+        }
+
+
+            //通过DOM获得要操作的元素
+        var btn1=document.getElementById('btn1')
+        //绑定一个单击事件
+        btn1.onclick=function(){
+            alert('按钮1被点击了')
+            //通过DOM编程动态绑定事件
+            //通过DOM编程触发div的单击事件
+            d1.onclick();
+        }
+
+        
+        
+    }
+
+    </script>
+
+    <style>
+        .div1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1" class="div1"></div>
+    <button id="btn1">按钮1</button>
+    
+</body>
+</html>

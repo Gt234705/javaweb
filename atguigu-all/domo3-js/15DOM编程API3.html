@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      
+        function addCs(){
+            var li=document.createElement("li")
+            li.innerText="长沙"
+            li.id="cs"
+            var ul=document.getElementsByTagName("ul")[0]
+            ul.appendChild(li)
+        }
+
+        //   在深圳前插入长沙
+        function addCsBeforeSz(){
+            var li=document.createElement("li")
+            li.innerText="长沙"
+            li.id="cs"
+            var ul=document.getElementById("city")
+            var sz=document.getElementById("sz")
+            ul.insertBefore(li,sz)
+        }
+
+        //  将城市列表中的深圳替换为长沙,替换元素
+        function reolaceSz(){
+            var csli=document.createElement("li")
+            csli.id="cs"
+            csli.innerText="长沙"
+            var cityul=document.getElementById("city")
+            var sz=document.getElementById("sz")
+            cityul.replaceChild(csli,sz)
+        }
+
+        //  删除深圳  删除元素
+        function removeSz(){
+            var cityul=document.getElementById("city")
+            var sz=document.getElementById("sz")
+            cityul.removeChild(sz)
+        }
+        //  清空列表
+        function removeLi(){
+            var cityul=document.getElementById("city")
+            cityul.innerHTML=""
+        }
+
+    </script>
+   
+</head>
+<body>
+    <ul id="city">
+        <li id="bj">北京</li>
+        <li id="sh">上海</li>
+        <li id="gz">广州</li>
+        <li id="sz">深圳</li>
+      
+        
+    </ul>
+   
+<hr>
+
+    <button onclick="addCs()">增加长沙</button>
+    <button onclick="addCsBeforeSz()">在深圳前插入长沙</button>
+    <button onclick="reolaceSz()">将城市列表中的深圳替换为长沙</button>
+    <button onclick="removeSz()">删除深圳</button>
+    <button onclick="removeLi()">清空列表</button>
+</body>
+</html>

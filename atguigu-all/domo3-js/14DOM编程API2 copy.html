@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      
+
+        /*
+            对元素进行操作
+                1.操作元素的属性   元素名.属性名="属性值"
+                2.操作元素的文本     元素名.innerHTML  //可识别文本和HTML标签      元素名.innerText  //只可识别文本
+
+                
+        //           
+                3.操作元素的样式    元素名.style.属性名="属性值"  元素样式名中的"-"要转换成驼峰式  background-color->backgroundColor
+                4.增删元素
+        */
+
+function changegeAttrbute(){
+    var in1=document.getElementById("in1")
+    //语法：
+    //获取属性值   in1.type
+    
+    //修改属性值
+    in1.type="button"
+    in1.value="嗨"
+}
+
+    function changegeStyle(){
+        var in1=document.getElementById("in1")
+        //语法：
+        //获取样式值   元素名.style.属性名="属性值"
+        
+        //修改样式值
+        in1.style.color="green"
+        in1.style.backgroundColor="yellow"
+        in1.style.borderRadius="5px"
+    }
+
+
+    function changegeText(){
+        var div01=document.getElementById("div01")
+        //语法 ：
+        //获取文本值   元素名.innerHTML  //可识别文本和HTML标签
+        //            元素名.innerText  //只可识别文本
+        
+        //修改文本值
+        console.log(div01.innerHTML)
+        div01.innerText="嗨"//不可以识别html标签
+       
+        div01.innerHTML="<h5>百度</h5>"//可以识别html标签
+        
+    }
+    
+      
+    </script>
+    <style>
+        #in1{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <input id="in1" type="text" value="hello">
+   <div id="div01">hello</div>
+    <hr>
+
+
+    <button onclick="changegeAttrbute()">操作属性</button>
+    <button onclick="changegeStyle()">操作元素</button>
+    <button onclick="changegeText()">操作文本</button>
+</body>
+</html>

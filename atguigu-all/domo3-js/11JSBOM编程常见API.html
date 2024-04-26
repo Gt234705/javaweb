@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        BOM编程常见API
+            1、window对象是由浏览器提供给我们使用的，无需自己new的，直接使用即可
+                也可以省略window.不写
+            2、BOM编程常见API
+                1、三种弹窗方式：alert、confirm、prompt
+                2、定时任务：setTimeout
+
+
+            3、history对象  窗口的访问历史
+            4、location对象  窗口的url地址
+            5、sessionStorage对象  窗口的临时数据
+            6、localStorage对象  窗口的永久数据
+
+                
+        */
+
+        function fun2(){
+            var msg=window.prompt("123");
+           console.log(msg);
+        } 
+        function fun3(){
+            var msg=window.confirm("456");
+           console.log(msg);
+        }
+        function fun4(){
+            window.setTimeout(function(){
+                console.log("123");
+            },2000);
+        }
+
+
+        function funa(){
+            //向前一页
+            window.history.back();
+        }
+        function funb(){
+            //向后一页
+            window.history.forward();
+            //window.history.go(1);
+        }
+
+    </script>
+</head>
+<body>
+
+    <button onclick="sessionStorage.setItem('name','张三')">会话存储数据1</button>
+    <button onclick="localStorage.setItem('name','李四')">本地存储数据2</button>
+    <button onclick="console.log(sessionStorage.getItem('name'))">读取数据1</button>
+    <button onclick="console.log(localStorage.getItem('name'))">读取数据2</button>
+    <button onclick="window.sessionStorage.removeItem('name')">清楚数据1</button>
+    <button onclick="window.localStorage.removeItem('name')">清楚数据2</button>
+
+    <hr>
+    <!-- 修改地址栏url ，跳转到百度 -->
+    <button onclick="window.location.href='http://www.baidu.com'">百度</button>
+    <hr>
+    <button onclick="funa()">上一页</button>
+    <button onclick="funb()">下一页</button>
+
+
+    <hr>
+    <button onclick="alert('信息提示框')">信息提示框</button>
+    <button onclick="fun2()">信息输入框</button>
+    <button onclick="fun3()">信息确定框</button>
+    <button onclick="fun4()">两秒后向控制台打印</button>
+</body>
+</html>
