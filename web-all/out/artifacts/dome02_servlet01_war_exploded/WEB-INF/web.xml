@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+   <!-- <servlet>
+        &lt;!&ndash;
+            一个servlet-name可以同时对应多个url-pattern
+            servlet标签可以同时对应多个 <servlet-mapping>
+        &ndash;&gt;
+      1.<servlet-name>  同于关联请求的映射路径
+        <servlet-name>user</servlet-name>
+      2.<servlet-class>告诉Tomcat对应的实例化的Servlet类
+        <servlet-class>com.qijulang.servlet.com.qijulang.servlet.UserServlet</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>user</servlet-name>
+
+        &lt;!&ndash;
+              url-pattern：
+                            精确匹配：/user
+                            模糊匹配：/user/*
+              &ndash;&gt;
+        <url-pattern>/user</url-pattern>
+    </servlet-mapping>-->
+</web-app>
